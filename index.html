@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mycolorscheme@0.0.5/mytheme.min.css" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="loading">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="200"
+            height="200" style="shape-rendering:auto;display:block;background:0 0">
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43">
+                <animate repeatCount="indefinite" begin="-0.8333333333333334s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43" transform="rotate(60 50 50)">
+                <animate repeatCount="indefinite" begin="-0.6666666666666666s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43" transform="rotate(120 50 50)">
+                <animate repeatCount="indefinite" begin="-0.5s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43" transform="rotate(180 50 50)">
+                <animate repeatCount="indefinite" begin="-0.3333333333333333s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43" transform="rotate(240 50 50)">
+                <animate repeatCount="indefinite" begin="-0.16666666666666666s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+            <rect fill="#3b82f6" height="25" width="14" ry="12.5" rx="7" y="37.5" x="43" transform="rotate(300 50 50)">
+                <animate repeatCount="indefinite" begin="0s" dur="1s" keyTimes="0;1" values="1;0"
+                    attributeName="opacity" />
+            </rect>
+        </svg>
+    </div>
+    <main class="stopwatch">
+        <div id="timer">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg> Stopwatch <span class="status-info">stopped</span></h1>
+            <button id="start" class="start">Start Stopwatch</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="output">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+                Time <span class="status-info">stopped</span></h1>
+            <div id="result">0</div>
+            <a href="#timer" title="go to top of page" id="goTo_pageTop"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+                </svg>
+            </a>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
